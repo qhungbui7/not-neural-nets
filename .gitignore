@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+decision-tree/data
+frequent-itemset-mining/groceries.csv
+k-means/data
