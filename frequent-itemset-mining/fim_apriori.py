@@ -1,7 +1,6 @@
 import os
 import numpy as np
 import csv
-# YOUR CODE HERE (OPTION)
 import pandas as pd
 from csv import reader
 import itertools

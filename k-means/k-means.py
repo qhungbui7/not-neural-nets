@@ -2,7 +2,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 from scipy.spatial.distance import cdist
 
-seed = 520 # for reproducibility
+seed = 42
 
 ### Description: generate synthetic data
 
@@ -50,7 +50,6 @@ def kmeans_init_centers(X, k):
 def kmeans_assign_labels(X, centers):
     return np.argmin(cdist(X, centers), axis=1)
 
-# 1
 def kmeans_update_centers(X, labels, K):
     centers = np.zeros((K, X.shape[1]))
     for k in range(K):
@@ -61,7 +60,6 @@ def has_converged(centers, new_centers):
     return (centers == new_centers).all()
 
 
-# 1
 def kmeans(X, K):
     # save the center coordinates of each iteration
     centers = [kmeans_init_centers(X, K)]  
@@ -76,7 +74,7 @@ def kmeans(X, K):
         #    and append NEW center coordinates to centers
         # 4. update iteration 
 
-        # YOUR CODE HERE
+
         #1.
         assigned_labels = kmeans_assign_labels(X, centers[-1])
         labels.append(assigned_labels)

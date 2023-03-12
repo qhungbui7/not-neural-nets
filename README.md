@@ -1,2 +1,2 @@
 # not-neural-nets
-Python implementation of several Machine Learning Algorithm
+Python implementation of several Machine Learning Algorithms
